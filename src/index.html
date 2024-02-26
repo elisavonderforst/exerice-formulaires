@@ -55,20 +55,20 @@
     </form>
     <form class="login-1">
       <input type="text" name="username" placeholder="Prénom" />
-      <input type="password" name="password" placeholder="Nom" />
+      <input type="text" name="password" placeholder="Nom" />
       <div class="langue">
         <br />
         <div>
-          <input name="laguage" type="radio" id="fr" />
-          <label for="fr">Français</label>
+          <input name="laguage" type="radio" id="fr-1" />
+          <label for="fr-1">Français</label>
         </div>
         <div>
-          <input name="laguage" type="radio" id="all" />
-          <label for="all">Allemand</label>
+          <input name="laguage" type="radio" id="all-1" />
+          <label for="all-1">Allemand</label>
         </div>
         <div>
-          <input name="laguage" type="radio" id="it" />
-          <label for="it">Italien</label>
+          <input name="laguage" type="radio" id="it-1" />
+          <label for="it-1">Italien</label>
         </div>
       </div>
       <br />
@@ -84,7 +84,6 @@
       </div>
       <br />
       <div class="pays">
-        <label for="country">Pays</label>
         <select id="country" name="country">
           <option value="SW">Suisse</option>
           <option value="FR">France</option>
@@ -97,6 +96,55 @@
         <label for="message">Remarque</label>
         <br />
         <textarea id="message" name="message"></textarea>
+      </div>
+      <div class="envoyer">
+        <input class="styled" type="button" value="Envoyer" />
+      </div>
+    </form>
+    <form class="login-2">
+      <div class="textfield">
+        <input type="text" name="username" />
+        <label>Prénom</label>
+      </div>
+      <div class="textfield">
+        <input type="text" name="password" />
+        <label>Nom</label>
+      </div>
+      <div class="langue">
+        <br />
+        <div>
+          <input name="laguage" type="radio" id="fr-2" />
+          <label for="fr-2">Français</label>
+        </div>
+        <div>
+          <input name="laguage" type="radio" id="all-2" />
+          <label for="all-2">Allemand</label>
+        </div>
+        <div>
+          <input name="laguage" type="radio" id="it-2" />
+          <label for="it-2">Italien</label>
+        </div>
+      </div>
+      <br />
+      <div class="autre">
+        <div>
+          <label class="switch">
+            <input type="checkbox" />
+            <div class="switch-wrapper">
+              <div class="switch-inner"></div>
+            </div>
+            S'abonner à la newsletter
+          </label>
+        </div>
+        <div>
+          <label class="switch">
+            <input type="checkbox" />
+            <div class="switch-wrapper">
+              <div class="switch-inner"></div>
+            </div>
+            J'accepte les conditions générales
+          </label>
+        </div>
       </div>
     </form>
     <script src="js/main.js" type="module"></script>

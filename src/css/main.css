@@ -51,10 +51,108 @@ form {
 
 .login-1 > input {
   background-color: #303245;
+  color: beige;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
 }
 
-input 
+.login-1 > .langue > input {
+  color: rgb(73, 19, 73);
+}
 
+.login-1 > .pays > select {
+  color: rgba(101, 101, 122, 1);
+  background-color: #303245;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-1 > .message > textarea {
+  color: rgba(101, 101, 122, 1);
+  background-color: #303245;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-1 > .envoyer > input {
+  color: white;
+  background: rgb(20, 154, 184);
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.login-2 {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.login-2 > input {
+  color: #ababab;
+  border: #ababab solid 1px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  color: #ababab;
+  width: 178px;
+  height: 54px;
+}
+
+.switch-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  background: orange;
+}
+
+.switch-inner {
+  width: 16px;
+  height: 16px;
+  margin-top: -3px;
+  border-radius: 8px;
+  background: red;
+}
+
+input:checked + .switch-wrapper .switch-inner {
+  margin-left: 14px;
+  transition: margin-left 0.3s ease-in-out 0.1s;
+}
+
+.switch input {
+  display: none;
+}
+.textfield {
+  position: relative;
+}
+
+.textfield > input {
+  padding: 0 10px 10px;
+  margin-bottom: 10px;
+}
+
+.textfield label {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+}
+
+input:focus + label {
+  transform: translateY(-7px) scale(0.7);
+}
+
+.textfield label {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  pointer-events: none;
+  transition: transform 0.3s;
+  transform-origin: left;
+}
 /* ====================================
 // base rules
 // ==================================== */
